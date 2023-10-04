@@ -1,0 +1,93 @@
+// Biến
+$button-padding: 10px 20px;
+$button-bg: #4CAF50;
+$button-color: #FFF;
+$button-border-radius: 4px;
+$button-hover-bg: darken($button-bg, 10%);
+$secondary-button-bg: #6C757D;
+$warning-button-bg: #FFC107;
+$danger-button-bg: #DC3545;
+$success-button-bg: #28A745;
+$info-button-bg: #17A2B8;
+
+// Mixins
+@mixin button-size($padding-y, $padding-x, $font-size) {
+  padding: $padding-y $padding-x;
+  font-size: $font-size;
+}
+
+// Core Button Style
+.button {
+  display: inline-block;
+  padding: $button-padding;
+  background-color: $button-bg;
+  color: $button-color;
+  border: none;
+  border-radius: $button-border-radius;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  
+  &:hover,
+  &:focus {
+    background-color: $button-hover-bg;
+  }
+  
+  &:disabled {
+    background-color: lighten($button-bg, 10%);
+    cursor: not-allowed;
+  }
+  
+  // Sizes
+  &.small {
+    @include button-size(5px, 10px, 12px);
+  }
+  
+  &.medium {
+    @include button-size(10px, 20px, 16px);
+  }
+  
+  &.large {
+    @include button-size(15px, 30px, 20px);
+  }
+  
+  // Variants
+  &.secondary {
+    background-color: $secondary-button-bg;
+    &:hover,
+    &:focus {
+      background-color: darken($secondary-button-bg, 10%);
+    }
+  }
+  
+  &.warning {
+    background-color: $warning-button-bg;
+    &:hover,
+    &:focus {
+      background-color: darken($warning-button-bg, 10%);
+    }
+  }
+  
+  &.danger {
+    background-color: $danger-button-bg;
+    &:hover,
+    &:focus {
+      background-color: darken($danger-button-bg, 10%);
+    }
+  }
+  
+  &.success {
+    background-color: $success-button-bg;
+    &:hover,
+    &:focus {
+      background-color: darken($success-button-bg, 10%);
+    }
+  }
+  
+  &.info {
+    background-color: $info-button-bg;
+    &:hover,
+    &:focus {
+      background-color: darken($info-button-bg, 10%);
+    }
+  }
+}

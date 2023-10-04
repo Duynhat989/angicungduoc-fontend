@@ -9,6 +9,7 @@ const lang = {
   "[NEW_HERE]": "New here",
   "[NEW_HERE_TITLE]": "Sign up to explore countless new opportunities!",
   "[HOME]": "Home",
+  "[FOOD]": "Food",
   "[ABOUT]": "About",
   "[MESSAGE]": "Messages",
   "[PROJECT]": "Projects",

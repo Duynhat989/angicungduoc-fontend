@@ -1,0 +1,108 @@
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+//Flex Class
+@mixin flex($align: flex-start, $justify: flex-start) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+$flex-types: (
+    center: center,
+    start: flex-start,
+    end: flex-end,
+    between: space-between,
+    around: space-around
+);
+  
+@each $key1, $value1 in $flex-types {
+    @each $key2, $value2 in $flex-types {
+        .flex-#{$key1}-#{$key2} {
+            @include flex($value1, $value2);
+        }
+    }
+}
+
+//Font Sizes
+@for $i from 10 through 30 {
+    .fs-#{$i} {
+        font-size: #{$i}px;
+    }
+}
+//Margin và Padding
+$spaces: (
+  10: 10px,
+  15: 15px,
+  20: 20px,
+  30: 30px
+);
+
+@mixin spacing-classes($property, $prefix) {
+  @each $key, $value in $spaces {
+    .#{$prefix}-#{$key} {
+      #{$property}: $value;
+    }
+  }
+}
+
+@include spacing-classes(margin-bottom, mb);
+@include spacing-classes(margin-top, mt);
+@include spacing-classes(padding-top, pt);
+
+// ... And so on
+
+.text-center {
+    text-align: center;
+    width: 100%;
+}
+.f-w-b {
+    font-weight: bold;
+}
+.f-italic {
+    font-style: italic;
+}
+.color-main {
+    color: $color_main;
+}
+.white {
+    color: #fff;
+}
+.black {
+    color: #000;
+}
+.text-up {
+    text-transform: uppercase;
+}
+.w-100 {
+    width: 100%;
+}
+.w-50 {
+    width: 50%;
+}
+.w-40 {
+    width: 40%;
+}
+select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-color: #fff;
+    &:focus {
+        outline: none;
+        border-color: #6699cc;
+    }
+    option {
+        background-color: #f8f8f8;
+        color: #333;
+    }
+}

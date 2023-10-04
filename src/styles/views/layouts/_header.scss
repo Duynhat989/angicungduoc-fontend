@@ -1,0 +1,33 @@
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0px 4px 15px 1px #ffafe74d;
+    background-color: #fdfaf5;
+    &-left {
+        max-width: 250px;
+    }
+    &-right {
+        margin-left: 20px;
+        max-width: calc((100% - 270px));
+        width: 100%;
+    }
+    .menu {
+        &-item {
+            margin-left: 20px;
+            &:first-child {
+                margin-left: 0px;
+            }
+        }
+        .sub-menu {
+            display: none;
+        }
+    }
+}
+// mobile
+.menu-mobile {
+    display: none;
+}

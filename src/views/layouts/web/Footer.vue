@@ -62,32 +62,12 @@ onMounted(() => {
 </script>
 
 <template>
-  <!-- <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="content">
-          <i class='bx bx-copyright'></i> Copyright by Kojy 2023
-        </div>
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-content text-center">
+            <i class='bx bx-copyright'></i> Copyright by Kojy 2023
+          </div>
       </div>
-    </div>
-  </footer> -->
+  </footer>
 </template>
-<style scoped>
-.footer{
-  width: 100%;
-  text-align: end;
-  margin-top: 0.8em;
-}
-.content{
-  font-size: 0.7em;
-}
-@media only screen and (max-width: 1200px) {
-  
-}
-@media only screen and (max-width: 1000px) {
-  
-}
-@media only screen and (max-width: 600px) {
-  
-}
-</style>
+
