@@ -12,13 +12,14 @@
     "axios": "^1.5.0",
     "gitart-scroll-carousel": "^1.3.1",
     "gitart-vue-dialog": "^3.1.0",
-    "sass": "^1.66.1",
     "vue": "^3.2.36",
     "vue-router": "^4.2.0",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",
+    "sass": "^1.68.0",
+    "sass-loader": "^13.3.2",
     "vite": "^4.3.5"
   }
 }

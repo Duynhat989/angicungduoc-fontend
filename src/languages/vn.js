@@ -14,6 +14,7 @@ const lang = {
     "[NEW_HERE]":"Tạo mới",
     "[NEW_HERE_TITLE]":"Đăng ký vào khám phá vô số cơ hội mới!",
     "[HOME]":"Trang chủ",
+    "[FOOD]":"Thức ăn",
     "[ABOUT]":"Giới thiệu",
     "[JOB]":"Tuyển dụng",
     "[COURSE]":"Khóa học",

@@ -145,14 +145,14 @@ onMounted(() => {
             </div>
             <div class="input-group flex">
                 <input type="checkbox" />
-                <label class="notify">Lưu tài khoản</label>
+                <label class="notify black">Lưu tài khoản</label>
             </div>
             <div class="input-group">
                 <div>
-                    <button class="btn" @click="handleLogin()">Đăng nhập</button>
+                    <button class="button medium mb-10" @click="handleLogin()">Đăng nhập</button>
                 </div>
                 <div>
-                    <button class="btn line" @click="changeIsRegister()">Đăng ký</button>
+                    <button class="button medium" @click="changeIsRegister()">Đăng ký</button>
                 </div>
             </div>
         </div>

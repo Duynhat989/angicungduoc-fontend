@@ -1,0 +1,77 @@
+@import '../base/mixins';
+@import '../base/gird';
+@import '../components/buttons';
+@import './layouts/header';
+@import './layouts/footer';
+@import './layouts/food';
+@import '../base/class';
+@import '../../assets/fonts/stylesheet.css';
+
+* {
+    box-sizing: border-box;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+body {
+    font-size: 15px;
+    font-family: $font_family,sans-serif;
+    font-weight: 500;
+    color: $color_body;
+}
+input, button, textarea {
+    font-family: $font_family,sans-serif;
+}
+ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: $color_text_header;
+    transition: 0.3s;
+    &:hover {
+        color: $color_text_header_hover;
+    }
+}
+body h1,h2,h3,h4,p {
+    color: $color_text_accent;
+}
+
+h1,h2,h3,h4 {
+    font-weight: 600;
+}
+p {
+    line-height: 28px;
+}
+input {
+    padding: 0 10px;
+}
+.title_box {
+    transition: 0.3s;
+    &:hover {
+        color: $color_text_header_hover;
+    }
+}
+.text-center {
+    text-align: center;
+}
+
+.width_75 {
+    width: 75%;
+}
+.width_25 {
+    width: 25%;
+}
+.width_100 {
+    width: 100%;
+}

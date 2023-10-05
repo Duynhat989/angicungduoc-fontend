@@ -6,6 +6,10 @@ import Message from '../views/web/msg.vue'
 import Person from '../views/web/Person.vue'
 import Resources from '../views/web/Resources.vue'
 import Register from '../views/web/Register.vue'
+
+import FoodsIndex from '@/views/web/foods/index.vue'
+import FoodsShow from '@/views/web/foods/show.vue'
+
 import Login from '../views/auth/Login.vue'
 import Scamer from '../views/web/Scamer.vue'
 import NotFoundComponent from '../views/web/NotFoundComponent.vue'
@@ -22,7 +26,13 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: HomeView
-    }, {
+    },
+    {
+      path: '/food',
+      name: 'food',
+      component: FoodsIndex
+    },
+    {
       path: '/me',
       name: 'me',
       component: Person
